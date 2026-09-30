@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LearnX Academy - Master future-ready tech, AI engineering, full-stack web development, and UI/UX design with interactive lessons and 24/7 AI mentorship.">
+  <meta name="keywords" content="online learning, tech education, AI engineering, web development, UI/UX design, learn coding, tech certification">
+  <meta name="theme-color" content="#090a10">
+  <title>LearnX Academy | Master Future-Ready Tech & AI Skills</title>
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Ambient Background Glows -->
+  <div class="ambient-glow glow-top-left" aria-hidden="true"></div>
+  <div class="ambient-glow glow-hero-right" aria-hidden="true"></div>
+  <div class="ambient-glow glow-mid-center" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom-right" aria-hidden="true"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="site-header" id="navbar">
+    <div class="container nav-container">
+      <!-- Logo -->
+      <a href="#hero" class="brand-logo" aria-label="LearnX Academy Home">
+        <div class="logo-symbol">
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="logoGrad" x1="2" y1="2" x2="34" y2="34" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#3B82F6"/>
+                <stop offset="0.5" stop-color="#8B5CF6"/>
+                <stop offset="1" stop-color="#EC4899"/>
+              </linearGradient>
+            </defs>
+            <rect width="36" height="36" rx="10" fill="url(#logoGrad)"/>
+            <path d="M10 26L18 10L26 26" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12.5 21H23.5" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="27" cy="9" r="3" fill="#60A5FA"/>
+          </svg>
+        </div>
+        <span class="logo-text">Learn<span class="logo-highlight">X</span> <span class="logo-sub">Academy</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About &amp; Courses</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav CTA & Mobile Menu Toggle -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary nav-cta">
+          <span>Get Started</span>
+          <svg class="btn-arrow" viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+          </svg>
+        </a>
+
+        <!-- Hamburger Button -->
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobileMenu" aria-hidden="true">
+      <ul class="mobile-nav-links">
+        <li><a href="#hero" class="mobile-nav-link active">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About &amp; Courses</a></li>
+        <li><a href="#features" class="mobile-nav-link">Features</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-cta">
+        <a href="#contact" class="btn btn-primary btn-block mobile-cta-btn">
+          <span>Get Started Today</span>
+          <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <div class="badge-pill hero-badge">
+            <span class="badge-pulse"></span>
+            <span class="badge-icon">⚡</span>
+            <span>Next-Gen AI Learning Platform</span>
+            <span class="badge-tag">v3.0</span>
+          </div>
+
+          <h1 class="hero-title">
+            Master Future Skills with the Power of <span class="gradient-text">Interactive AI</span>
+          </h1>
+
+          <p class="hero-description">
+            Accelerate your tech journey with cutting-edge curriculums, hands-on production sandboxes, and an intelligent 24/7 AI mentor dedicated to your mastery.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#about" class="btn btn-primary btn-lg">
+              <span>Explore Courses</span>
+              <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+              </svg>
+            </a>
+            <a href="#features" class="btn btn-secondary btn-lg">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              <span>See How It Works</span>
+            </a>
+          </div>
+
+          <!-- Hero Metrics Bar -->
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <div class="metric-stars">★★★★★</div>
+              <span class="metric-text"><strong>4.9/5</strong> Rating (12k+ reviews)</span>
+            </div>
+            <div class="metric-divider" aria-hidden="true"></div>
+            <div class="metric-item">
+              <span class="metric-highlight">94%</span>
+              <span class="metric-text">Hired within 6 months</span>
+            </div>
+            <div class="metric-divider" aria-hidden="true"></div>
+            <div class="metric-item">
+              <span class="metric-highlight">50k+</span>
+              <span class="metric-text">Active Global Students</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Glassmorphism Learning Progress Dashboard Card -->
+        <div class="hero-visual">
+          <div class="dashboard-wrapper">
+            <!-- Glow backlight -->
+            <div class="dashboard-glow" aria-hidden="true"></div>
+            
+            <!-- Main Glass Card -->
+            <div class="glass-card main-progress-card">
+              <!-- Card Header -->
+              <div class="card-header-bar">
+                <div class="student-info">
+                  <div class="student-avatar">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3E%3Cdefs%3E%3ClinearGradient id='av' x1='0' y1='0' x2='80' y2='80' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%233B82F6'/%3E%3Cstop offset='1' stop-color='%238B5CF6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='80' height='80' rx='40' fill='url(%23av)'/%3E%3Ccircle cx='40' cy='32' r='14' fill='%23FFFFFF' fill-opacity='0.9'/%3E%3Cpath d='M18 68 C 18 52, 28 46, 40 46 C 52 46, 62 52, 62 68 Z' fill='%23FFFFFF' fill-opacity='0.9'/%3E%3C/svg%3E" alt="Student Profile Avatar" width="48" height="48">
+                    <span class="status-indicator online" title="Status: Online"></span>
+                  </div>
+                  <div>
+                    <h3 class="student-name">Alex Rivera</h3>
+                    <div class="student-badge-line">
+                      <span class="pill-badge level">Level 4 Scholar</span>
+                      <span class="pill-badge streak">🔥 18-Day Streak</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="xp-counter">
+                  <span class="xp-label">Session XP</span>
+                  <span class="xp-value">+1,850 XP</span>
+                </div>
+              </div>
+
+              <!-- Active Course Module -->
+              <div class="active-module-box">
+                <div class="module-meta">
+                  <span class="module-category">Currently Learning</span>
+                  <span class="module-percent" id="livePercent">82%</span>
+                </div>
+                <h4 class="module-title">Neural Networks &amp; Autonomous Agents</h4>
+                <div class="progress-bar-container" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="Course completion progress">
+                  <div class="progress-fill" style="width: 82%;"></div>
+                </div>
+                <div class="progress-footer">
+                  <span class="module-sub">Module 6 of 8 • Transformer Self-Attention</span>
+                  <span class="time-est">⏱️ ~45 min left</span>
+                </div>
+              </div>
+
+              <!-- AI Mentor Live Assistant Chat Preview -->
+              <div class="ai-mentor-box">
+                <div class="ai-avatar-wrap">
+                  <div class="ai-glow-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true">
+                      <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                      <circle cx="12" cy="12" r="4"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="ai-chat-content">
+                  <div class="ai-chat-header">
+                    <span class="ai-name">LearnX AI Mentor</span>
+                    <span class="ai-time">Just now</span>
+                  </div>
+                  <p class="ai-message">
+                    "Great work on your PyTorch tensor broadcast! Your model loss dropped to <strong>0.042</strong>. Ready to test the live API endpoint?"
+                  </p>
+                </div>
+              </div>
+
+              <!-- Interactive Progress Actions -->
+              <div class="card-footer-actions">
+                <button class="btn btn-sm btn-glass" id="continueLearningBtn">
+                  <span>Resume Interactive Lab</span>
+                  <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                  </svg>
+                </button>
+                <div class="skill-tags-group">
+                  <span class="tag-pill">Python</span>
+                  <span class="tag-pill">PyTorch</span>
+                  <span class="tag-pill">LLMs</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Glass Badge 1: Achievement -->
+            <div class="floating-badge badge-top-right glass-card">
+              <div class="floating-badge-icon badge-achievement">🏆</div>
+              <div class="floating-badge-text">
+                <span class="fb-title">Milestone Achieved</span>
+                <span class="fb-sub">Transformer Specialist</span>
+              </div>
+            </div>
+
+            <!-- Floating Glass Badge 2: Live Activity -->
+            <div class="floating-badge badge-bottom-left glass-card">
+              <div class="pulse-dot"></div>
+              <div class="floating-badge-text">
+                <span class="fb-title">1,420 Active Peers</span>
+                <span class="fb-sub">Coding right now</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT & POPULAR COURSES SECTION ==================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <div class="badge-pill section-badge">
+            <span>About LearnX Academy</span>
+          </div>
+          <h2 class="section-title">
+            Reinventing Tech Education for the <span class="gradient-text">AI Generation</span>
+          </h2>
+          <p class="section-subtitle">
+            Traditional bootcamps give you static lectures. LearnX Academy pairs you with immersive real-time sandboxes, industry-standard engineering stacks, and an intelligent co-pilot that adapts to your learning pace.
+          </p>
+        </div>
+
+        <!-- Academy Impact Pillars / Counters -->
+        <div class="stats-grid">
+          <div class="stat-card glass-card">
+            <div class="stat-icon-wrap blue-glow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div class="stat-number" data-target="50000">50,000+</div>
+            <div class="stat-label">Global Graduates</div>
+            <p class="stat-desc">Empowered learners thriving in top tech hubs around the world.</p>
+          </div>
+
+          <div class="stat-card glass-card">
+            <div class="stat-icon-wrap purple-glow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24" aria-hidden="true">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <div class="stat-number" data-target="94">94%</div>
+            <div class="stat-label">Employment Rate</div>
+            <p class="stat-desc">Secured engineering or design roles within six months of graduation.</p>
+          </div>
+
+          <div class="stat-card glass-card">
+            <div class="stat-icon-wrap pink-glow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24" aria-hidden="true">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <div class="stat-number" data-target="4.9" data-decimal="true">4.9/5</div>
+            <div class="stat-label">Student Satisfaction</div>
+            <p class="stat-desc">Rated exceptionally by over 12,000 verified student reviews.</p>
+          </div>
+
+          <div class="stat-card glass-card">
+            <div class="stat-icon-wrap cyan-glow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24" aria-hidden="true">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <div class="stat-number" data-target="350">350+</div>
+            <div class="stat-label">Hiring Partners</div>
+            <p class="stat-desc">Direct talent pipelines with fast-growing startups and enterprises.</p>
+          </div>
+        </div>
+
+        <!-- Flagship Courses Header -->
+        <div class="courses-subhead text-center">
+          <h3 class="courses-title">Popular Flagship Programs</h3>
+          <p class="courses-desc">Hand-crafted, rigorous curriculums engineered with industry leaders to take you from foundational understanding to senior-level mastery.</p>
+        </div>
+
+        <!-- 3 Popular Courses Cards -->
+        <div class="courses-grid">
+          <!-- Course 1: Full-Stack Web Development -->
+          <article class="course-card glass-card">
+            <div class="course-header">
+              <div class="course-tag-wrap">
+                <span class="course-badge web-badge">Web Development</span>
+                <span class="course-rating">★ 4.9 <span>(4.2k)</span></span>
+              </div>
+              <div class="course-icon-banner">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="32" height="32" aria-hidden="true">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+            </div>
+
+            <div class="course-body">
+              <h4 class="course-name">Modern Full-Stack Web Engineering</h4>
+              <p class="course-summary">
+                Build high-performance web applications using modern React, Next.js 15, Node.js microservices, PostgreSQL, and serverless edge deployment architectures.
+              </p>
+
+              <div class="course-features-list">
+                <div class="course-meta-row">
+                  <span class="meta-item">⏱️ 12 Weeks (Flexible)</span>
+                  <span class="meta-item">💻 24 Real-World Projects</span>
+                </div>
+                <div class="course-meta-row">
+                  <span class="meta-item">🎯 Intermediate to Pro</span>
+                  <span class="meta-item">📜 Accredited Certificate</span>
+                </div>
+              </div>
+
+              <div class="tech-stack-pills">
+                <span class="stack-pill">Next.js</span>
+                <span class="stack-pill">TypeScript</span>
+                <span class="stack-pill">Node.js</span>
+                <span class="stack-pill">PostgreSQL</span>
+                <span class="stack-pill">Docker</span>
+              </div>
+            </div>
+
+            <div class="course-footer">
+              <div class="course-price">
+                <span class="price-val">Included</span>
+                <span class="price-sub">in Pro Membership</span>
+              </div>
+              <a href="#contact" class="btn btn-outline course-btn" data-course="Full-Stack Web Engineering">
+                <span>Enroll Now</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Course 2: AI & Machine Learning Engineering -->
+          <article class="course-card glass-card featured-course">
+            <div class="featured-ribbon">⭐ Most In-Demand</div>
+            <div class="course-header">
+              <div class="course-tag-wrap">
+                <span class="course-badge ai-badge">AI &amp; Deep Learning</span>
+                <span class="course-rating">★ 5.0 <span>(3.9k)</span></span>
+              </div>
+              <div class="course-icon-banner ai-glow-banner">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="32" height="32" aria-hidden="true">
+                  <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/>
+                  <path d="M12 6v6l4 2"/>
+                  <circle cx="12" cy="12" r="3"/>
+                </svg>
+              </div>
+            </div>
+
+            <div class="course-body">
+              <h4 class="course-name">AI &amp; Machine Learning Engineering</h4>
+              <p class="course-summary">
+                Design custom neural networks, fine-tune transformer models, architect production RAG systems with vector databases, and deploy scalable inference APIs.
+              </p>
+
+              <div class="course-features-list">
+                <div class="course-meta-row">
+                  <span class="meta-item">⏱️ 14 Weeks (Intensive)</span>
+                  <span class="meta-item">🤖 18 Autonomous AI Labs</span>
+                </div>
+                <div class="course-meta-row">
+                  <span class="meta-item">🎯 Advanced Foundations</span>
+                  <span class="meta-item">📜 AI Specialist Credential</span>
+                </div>
+              </div>
+
+              <div class="tech-stack-pills">
+                <span class="stack-pill">Python</span>
+                <span class="stack-pill">PyTorch</span>
+                <span class="stack-pill">LangChain</span>
+                <span class="stack-pill">OpenAI</span>
+                <span class="stack-pill">Vector DBs</span>
+              </div>
+            </div>
+
+            <div class="course-footer">
+              <div class="course-price">
+                <span class="price-val">Included</span>
+                <span class="price-sub">in Pro Membership</span>
+              </div>
+              <a href="#contact" class="btn btn-primary course-btn" data-course="AI & Machine Learning Engineering">
+                <span>Enroll Now</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Course 3: UI/UX & Product Design -->
+          <article class="course-card glass-card">
+            <div class="course-header">
+              <div class="course-tag-wrap">
+                <span class="course-badge design-badge">UI/UX &amp; Systems</span>
+                <span class="course-rating">★ 4.88 <span>(2.7k)</span></span>
+              </div>
+              <div class="course-icon-banner">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="32" height="32" aria-hidden="true">
+                  <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                  <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                  <path d="M2 2l7.586 7.586"></path>
+                  <circle cx="11" cy="11" r="2"></circle>
+                </svg>
+              </div>
+            </div>
+
+            <div class="course-body">
+              <h4 class="course-name">UI/UX Design Systems &amp; Product Strategy</h4>
+              <p class="course-summary">
+                Craft modern design systems in Figma, conduct deep user research, master micro-interactions, and build testable interactive prototypes for global products.
+              </p>
+
+              <div class="course-features-list">
+                <div class="course-meta-row">
+                  <span class="meta-item">⏱️ 10 Weeks (Self-Paced)</span>
+                  <span class="meta-item">🎨 15 Portfolio Case Studies</span>
+                </div>
+                <div class="course-meta-row">
+                  <span class="meta-item">🎯 Beginner to Advanced</span>
+                  <span class="meta-item">📜 Certified UX Architect</span>
+                </div>
+              </div>
+
+              <div class="tech-stack-pills">
+                <span class="stack-pill">Figma Pro</span>
+                <span class="stack-pill">Design Systems</span>
+                <span class="stack-pill">Prototyping</span>
+                <span class="stack-pill">UX Research</span>
+                <span class="stack-pill">Tokens</span>
+              </div>
+            </div>
+
+            <div class="course-footer">
+              <div class="course-price">
+                <span class="price-val">Included</span>
+                <span class="price-sub">in Pro Membership</span>
+              </div>
+              <a href="#contact" class="btn btn-outline course-btn" data-course="UI/UX & Product Design">
+                <span>Enroll Now</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FEATURES SECTION (EXACTLY 3 CARDS) ==================== -->
+    <section class="section features-section" id="features">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <div class="badge-pill section-badge">
+            <span>Platform Advantages</span>
+          </div>
+          <h2 class="section-title">
+            Engineered for <span class="gradient-text">Rapid Skill Mastery</span>
+          </h2>
+          <p class="section-subtitle">
+            Experience an education platform built around three transformative pillars designed to accelerate your growth 4x faster than standard video tutorials.
+          </p>
+        </div>
+
+        <!-- 3 Core Feature Cards -->
+        <div class="features-grid">
+          <!-- Feature 1: Interactive Lessons -->
+          <div class="feature-card glass-card">
+            <div class="feature-glow glow-blue" aria-hidden="true"></div>
+            
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="30" height="30" aria-hidden="true">
+                <polyline points="4 17 10 11 4 5"></polyline>
+                <line x1="12" y1="19" x2="20" y2="19"></line>
+              </svg>
+            </div>
+
+            <div class="feature-index">01</div>
+
+            <h3 class="feature-title">Interactive Lessons &amp; Sandboxes</h3>
+            
+            <p class="feature-description">
+              Stop watching passive videos. Dive into fully featured, zero-setup browser coding sandboxes equipped with automated unit test runners and real-time execution feedback.
+            </p>
+
+            <ul class="feature-checklist">
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Instant live code execution in 15+ modern languages</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Automated regression tests that guide your debugging</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Full Git &amp; GitHub integration for real developer workflows</span>
+              </li>
+            </ul>
+
+            <div class="feature-footer">
+              <span class="feature-tag">100% Hands-On Learning</span>
+            </div>
+          </div>
+
+          <!-- Feature 2: AI Mentorship -->
+          <div class="feature-card glass-card feature-spotlight">
+            <div class="feature-glow glow-purple" aria-hidden="true"></div>
+            
+            <div class="feature-icon-box ai-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="30" height="30" aria-hidden="true">
+                <path d="M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1-4 4 4 4 0 0 1-4-4V6a4 4 0 0 1 4-4z"></path>
+                <path d="M18 10a6 6 0 0 1 6 6v3a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1v-3a6 6 0 0 1 6-6"></path>
+                <line x1="12" y1="14" x2="12" y2="20"></line>
+              </svg>
+            </div>
+
+            <div class="feature-index">02</div>
+
+            <h3 class="feature-title">24/7 Intelligent AI Mentorship</h3>
+            
+            <p class="feature-description">
+              Never wait hours on a forum again. Your dedicated AI coding mentor inspects your logic in real-time, explains edge cases, creates custom quizzes, and adapts to your style.
+            </p>
+
+            <ul class="feature-checklist">
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Instant line-by-line syntax &amp; architectural feedback</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Interactive technical interview drill sessions</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Dynamic syllabus re-weighting based on weak spots</span>
+              </li>
+            </ul>
+
+            <div class="feature-footer">
+              <span class="feature-tag ai-tag">Always-On Copilot</span>
+            </div>
+          </div>
+
+          <!-- Feature 3: Career Certification -->
+          <div class="feature-card glass-card">
+            <div class="feature-glow glow-pink" aria-hidden="true"></div>
+            
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="30" height="30" aria-hidden="true">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+            </div>
+
+            <div class="feature-index">03</div>
+
+            <h3 class="feature-title">Career Certification &amp; Placement</h3>
+            
+            <p class="feature-description">
+              Graduate with verifiable cryptographic credentials trusted by top recruiters. Access our proprietary career portal, portfolio reviews, and exclusive hiring pipelines.
+            </p>
+
+            <ul class="feature-checklist">
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Direct partner referrals at YC startups and Big Tech</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Polished GitHub portfolio &amp; production architecture capstone</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>1-on-1 resume critiques &amp; behavioral prep</span>
+              </li>
+            </ul>
+
+            <div class="feature-footer">
+              <span class="feature-tag">Proven Career Results</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <div class="badge-pill section-badge">
+            <span>Connect With Us</span>
+          </div>
+          <h2 class="section-title">
+            Take Your Next Step with <span class="gradient-text">LearnX Academy</span>
+          </h2>
+          <p class="section-subtitle">
+            Have questions about syllabus details, tuition assistance, or enterprise corporate training? Our admissions advisors are ready to help you thrive.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          <!-- Left Column: Contact Details & Info Card -->
+          <div class="contact-info-card glass-card">
+            <div class="info-header">
+              <h3 class="info-title">Let’s Start a Conversation</h3>
+              <p class="info-desc">
+                Whether you're pivoting your career or leveling up current engineering skills, we're here to chart your personalized path.
+              </p>
+            </div>
+
+            <!-- Contact Channels List -->
+            <div class="contact-channels">
+              <div class="channel-item">
+                <div class="channel-icon-wrap">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">Email Admissions</span>
+                  <a href="mailto:admissions@learnxacademy.edu" class="channel-val">admissions@learnxacademy.edu</a>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-icon-wrap">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">Admissions Hotline</span>
+                  <a href="tel:+18005327691" class="channel-val">+1 (800) 532-7691</a>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-icon-wrap">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">Global Campus Hub</span>
+                  <span class="channel-val">525 Market St, San Francisco, CA &amp; Worldwide Remote</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Live Status Indicator -->
+            <div class="advisor-status-box">
+              <span class="live-dot"></span>
+              <div class="advisor-text">
+                <strong>Admissions Team is Online</strong>
+                <span>Average inquiry response time: &lt; 15 minutes</span>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links-wrap">
+              <span class="social-label">Follow LearnX Global:</span>
+              <div class="social-icons">
+                <a href="#hero" class="social-btn" aria-label="LearnX on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </a>
+                <a href="#hero" class="social-btn" aria-label="LearnX on Twitter / X">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                  </svg>
+                </a>
+                <a href="#hero" class="social-btn" aria-label="LearnX on LinkedIn">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m1.4 9.74v-8.37H5.06v8.37h2.8z"/>
+                  </svg>
+                </a>
+                <a href="#hero" class="social-btn" aria-label="LearnX on Discord">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                    <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Contact Form -->
+          <div class="contact-form-card glass-card">
+            <div class="form-header">
+              <h3 class="form-title">Send Us a Message</h3>
+              <p class="form-desc">Fill out the quick form below and we'll reply within 24 hours.</p>
+            </div>
+
+            <form id="contactForm" class="contact-form" novalidate>
+              <!-- Full Name Field -->
+              <div class="form-group" id="group-name">
+                <label for="fullName" class="form-label">Full Name <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <span class="input-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                  </span>
+                  <input type="text" id="fullName" name="fullName" class="form-control" placeholder="Jane Doe" autocomplete="name" required>
+                </div>
+                <div class="form-feedback" id="feedback-name" aria-live="polite"></div>
+              </div>
+
+              <!-- Email Field -->
+              <div class="form-group" id="group-email">
+                <label for="email" class="form-label">Email Address <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <span class="input-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </span>
+                  <input type="email" id="email" name="email" class="form-control" placeholder="jane@example.com" autocomplete="email" required>
+                </div>
+                <div class="form-feedback" id="feedback-email" aria-live="polite"></div>
+              </div>
+
+              <!-- Program / Subject Interest -->
+              <div class="form-group" id="group-program">
+                <label for="program" class="form-label">Program of Interest</label>
+                <div class="input-wrapper select-wrapper">
+                  <span class="input-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                      <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                      <polyline points="2 17 12 22 22 17"></polyline>
+                      <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                  </span>
+                  <select id="program" name="program" class="form-control">
+                    <option value="All Programs">Select your area of interest</option>
+                    <option value="Full-Stack Web Development">Full-Stack Web Engineering</option>
+                    <option value="AI & Machine Learning">AI &amp; Machine Learning Engineering</option>
+                    <option value="UI/UX & Product Design">UI/UX &amp; Product Design Systems</option>
+                    <option value="Enterprise Team Training">Enterprise Corporate Training</option>
+                    <option value="General Inquiries">General Question / Advisory</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Message Field -->
+              <div class="form-group" id="group-message">
+                <label for="message" class="form-label">Your Message <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <textarea id="message" name="message" class="form-control textarea-control" rows="4" placeholder="Tell us about your learning goals or questions..." required></textarea>
+                </div>
+                <div class="form-feedback" id="feedback-message" aria-live="polite"></div>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary btn-block submit-btn" id="submitBtn">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-spinner" aria-hidden="true"></span>
+                <svg class="btn-submit-icon" viewBox="0 0 20 20" fill="currentColor" width="18" height="18" aria-hidden="true">
+                  <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"/>
+                </svg>
+              </button>
+            </form>
+
+            <!-- Success State Banner (Hidden by default, triggered on valid submit) -->
+            <div class="form-success-banner" id="formSuccessBanner" aria-live="assertive" role="alert" style="display: none;">
+              <div class="success-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="24" height="24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <div class="success-content">
+                <h4 class="success-heading">Message Sent Successfully!</h4>
+                <p class="success-msg">Thank you, <span id="successSenderName">there</span>! Our admissions advisor will contact you at <span id="successSenderEmail">your email</span> within 24 hours.</p>
+                <button type="button" class="btn btn-sm btn-outline reset-form-btn" id="resetFormBtn">Send Another Inquiry</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo" aria-label="LearnX Academy Home">
+            <div class="logo-symbol">
+              <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg" aria-hidden="true">
+                <rect width="36" height="36" rx="10" fill="url(#logoGrad)"/>
+                <path d="M10 26L18 10L26 26" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12.5 21H23.5" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="27" cy="9" r="3" fill="#60A5FA"/>
+              </svg>
+            </div>
+            <span class="logo-text">Learn<span class="logo-highlight">X</span> <span class="logo-sub">Academy</span></span>
+          </a>
+          <p class="footer-mission">
+            Empowering the next generation of engineers, AI practitioners, and product designers with interactive education and personalized intelligence.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Programs</h4>
+          <ul class="footer-links">
+            <li><a href="#about">Full-Stack Web Engineering</a></li>
+            <li><a href="#about">AI &amp; Machine Learning</a></li>
+            <li><a href="#about">UI/UX &amp; Product Design</a></li>
+            <li><a href="#about">Enterprise Solutions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Platform</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Interactive Sandboxes</a></li>
+            <li><a href="#features">24/7 AI Mentorship</a></li>
+            <li><a href="#features">Career Certification</a></li>
+            <li><a href="#contact">Admissions &amp; Aid</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Stay In The Loop</h4>
+          <p class="footer-sub-text">Get weekly tech roadmaps and AI engineering tutorials straight to your inbox.</p>
+          <form class="footer-newsletter-form" id="newsletterForm" onsubmit="event.preventDefault(); alert('Subscribed to LearnX Tech Briefing!');">
+            <input type="email" class="newsletter-input" placeholder="Enter your email" required aria-label="Newsletter email">
+            <button type="submit" class="btn btn-primary newsletter-btn" aria-label="Subscribe to newsletter">
+              <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="currentYear">2026</span> LearnX Academy Inc. Built for future innovators. All rights reserved.
+        </p>
+        <div class="footer-bottom-links">
+          <a href="#hero">Privacy Policy</a>
+          <span class="sep">•</span>
+          <a href="#hero">Terms of Service</a>
+          <span class="sep">•</span>
+          <a href="#hero">Security</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notification Toast Element -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
